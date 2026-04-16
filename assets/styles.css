@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1420;
+  color: #edf3ff;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.obolochka {
+  width: calc(100% - 36px);
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.shapka-sayta {
+  background: #0f1b2b;
+  padding: 14px 0;
+}
+
+
+.dom-verh-ryad {
+  display: flex;
+  flex-direction: column;
+}
+
+.dom-verh-pravo img {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.kartinka-stati{
+  display: flex;
+  justify-content: center;
+}
+
+.kartinka-stati img{
+  width: 50%;
+  margin: 15px 0 30px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.znak-logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1d4f9d;
+}
+
+.ssylki-navigacii {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.ssylki-navigacii a {
+  color: #c6d4ec;
+  font-size: 15px;
+}
+
+.ssylki-navigacii a.active {
+  color: #ffffff;
+}
+
+.menu-knopka {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.glavnyy-ekran,
+.verh-stranicy {
+  padding: 34px 0 10px;
+}
+
+.kompakt-verh {
+  padding-bottom: 0;
+}
+
+.razdel,
+.razdel-temnee,
+.razdel-myagkiy {
+  padding: 22px 0;
+}
+
+.dom-verh-ryad,
+.osobennosti-ryad,
+.razdel-na-dve,
+.dlya-kogo-ryad,
+.podval-ryad,
+.sdvinutyy-blok,
+.prostye-kartochki,
+.nerovnye-kartochki,
+.instrumenty-ryad,
+.prostye-paneli,
+.kontakty-ryad,
+.kontakty-glavnoe,
+.form-grid,
+.ryad-statey,
+.prizyv-panel,
+.potok-statey,
+.deystviya-verha,
+.cta-actions,
+.poisk-prostoy {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dom-verh-ryad,
+.osobennosti-ryad,
+.razdel-na-dve,
+.dlya-kogo-ryad,
+.podval-ryad,
+.sdvinutyy-blok,
+.prostye-kartochki,
+.nerovnye-kartochki,
+.instrumenty-ryad,
+.prostye-paneli,
+.kontakty-ryad,
+.kontakty-glavnoe,
+.form-grid,
+.ryad-statey,
+.prizyv-panel,
+.potok-statey {
+  gap: 18px;
+}
+
+.deystviya-verha,
+.cta-actions,
+.poisk-prostoy {
+  gap: 12px;
+}
+
+.dom-verh-levo,
+.dom-verh-pravo,
+.dve-chasti-foto,
+.dve-chasti-tekst,
+.sdvinutyy-tekst,
+.sdvinutaya-kartinka,
+.kontakty-glavnoe,
+.forma-prostaya,
+.kontakty-blok,
+.prostaya-panel,
+.tekst-stati,
+.bok-stati {
+  flex: 1 1 320px;
+}
+
+.dom-verh-levo h1,
+.verh-stranicy h1 {
+  margin: 0 0 14px;
+  font-size: 46px;
+  line-height: 1.05;
+  font-weight: bold;
+}
+
+.zagolovok-razdela {
+  margin-bottom: 16px;
+}
+
+.zagolovok-razdela h2,
+.dve-chasti-tekst h2,
+.sdvinutyy-tekst h2,
+.prizyv-panel h2,
+.prostaya-panel h2,
+.kontakty-blok h2,
+.tekst-stati h2,
+.tekst-stati h3 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.osobennost-kartochka h3,
+.dlya-kogo-kartochka h3,
+.prostaya-kartochka h3,
+.nerovnaya-kartochka h3,
+.instrument-kartochka h3,
+.kontakty-mini h3,
+.vopros-knopka,
+.tekst-stati h4 {
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+
+.dom-verh-levo p,
+.verh-stranicy p,
+.vstup-razdela,
+.dve-chasti-tekst p,
+.sdvinutyy-tekst p,
+.osobennost-kartochka p,
+.dlya-kogo-kartochka p,
+.prostaya-kartochka p,
+.nerovnaya-kartochka p,
+.instrument-kartochka p,
+.prostaya-panel p,
+.tekst-stati p,
+.kontakty-blok p,
+.form-note,
+.tihiy-tekst,
+.vopros-otvet p,
+.podval-sayta p,
+.kontakty-mini p,
+li {
+  margin: 0 0 10px;
+  color: #becbe0;
+  font-size: 16px;
+}
+
+ul {
+  padding-left: 18px;
+  margin: 0 0 14px;
+}
+
+.knopka {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 16px;
+  background: #214f9a;
+  color: white;
+}
+
+.knopka-vtoraya {
+  background: #182638;
+}
+
+.verh-panel,
+.zametka-verha,
+.osobennost-kartochka,
+.dlya-kogo-kartochka,
+.prostaya-kartochka,
+.nerovnaya-kartochka,
+.instrument-kartochka,
+.prostaya-panel,
+.kontakty-mini,
+.kontakty-blok,
+.forma-prostaya,
+.bok-stati,
+.vopros-otvet {
+  background: rgba(255,255,255,0.03);
+  padding: 14px;
+}
+
+.glavnaya-panel {
+  padding: 10px;
+}
+
+.zametka-sverhu {
+  max-width: 260px;
+  margin-top: 12px;
+  margin-left: 30px;
+}
+
+.zametka-snizu {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  max-width: 320px;
+  margin-top: 12px;
+}
+
+.osobennost-kartochka,
+.dlya-kogo-kartochka,
+.prostaya-kartochka,
+.nerovnaya-kartochka,
+.instrument-kartochka,
+.kontakty-mini {
+  flex: 1 1 220px;
+}
+
+.osobennost-glavnaya,
+.osobennost-shirokaya,
+.dlya-kogo-shirokaya,
+.instrument-shirokiy {
+  flex: 1 1 320px;
+}
+
+.ikonka-bloka,
+.ikonka-auditorii,
+.instrument-ikonka {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #8fb2ef;
+}
+
+.meloch-nad-zagolovkom,
+.metka-instrumenta {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #8fb2ef;
+  font-size: 13px;
+}
+
+.razdel-temnee {
+  background: #0d1826;
+}
+
+.razdel-myagkiy {
+  background: #0c1725;
+}
+
+.poisk-prostoy {
+  align-items: center;
+  background: rgba(255,255,255,0.03);
+  padding: 10px 12px;
+  margin-bottom: 16px;
+}
+
+.poisk-prostoy input,
+.forma-prostaya input,
+.forma-prostaya textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.06);
+  color: white;
+}
+
+.forma-prostaya textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-grid > div {
+  flex: 1 1 220px;
+}
+
+.vopros-knopka {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  color: white;
+  padding: 0;
+  cursor: pointer;
+}
+
+.vopros-otvet {
+  overflow: hidden;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.podval-sayta {
+  padding: 24px 0 30px;
+  background: #09111b;
+}
+
+.podval-sayta h4 {
+  margin: 0 0 10px;
+}
+
+.podval-sayta a,
+.podval-sayta span {
+  display: block;
+  margin-bottom: 8px;
+  color: #c4d0e2;
+}
+
+@media (max-width: 860px) {
+  .menu-knopka {
+    display: block;
+  }
+
+  .ssylki-navigacii {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .ssylki-navigacii.open {
+    display: flex;
+  }
+
+  .nav {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .dom-verh-levo h1,
+  .verh-stranicy h1 {
+    font-size: 34px;
+  }
+}

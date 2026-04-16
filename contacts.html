@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты - NeuroSpace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="shapka-sayta">
+    <div class="obolochka nav">
+      <a class="logo" href="index.html">
+        <span class="znak-logo"><i class="fa-solid fa-brain"></i></span>
+        <span class="tekst-logo">NeuroSpace</span>
+      </a>
+
+      <button class="menu-knopka">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="ssylki-navigacii">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нейросетях</a>
+        <a href="tools.html">Инструменты</a>
+        <a href="articles.html">Статьи</a>
+        <a class="active" href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <div>
+    <div class="verh-stranicy kompakt-verh">
+      <div class="obolochka">
+        <div class="zag-prosto"><h1>Контакты редакции</h1></div>
+        <p>На этой странице можно найти контактную информацию и отправить сообщение по материалам сайта.</p>
+      </div>
+    </div>
+
+    <div class="razdel">
+      <div class="obolochka kontakty-ryad kontakty-prostye">
+        <div class="kontakty-glavnoe">
+          <div class="kontakty-blok kontakty-info">
+            <span class="meloch-nad-zagolovkom">Контактная информация</span>
+            <h2>Как с нами связаться</h2>
+            <p>Редакция отвечает на вопросы по публикациям, предложения по новым темам и сообщения о сотрудничестве.</p>
+
+            <div class="stroki-kontaktov">
+              <div><i class="fa-solid fa-envelope"></i><span>hello@neurospace.ru</span></div>
+              <div><i class="fa-solid fa-phone"></i><span>+7 (800) 555-35-35</span></div>
+              <div><i class="fa-solid fa-location-dot"></i><span>Москва, ул. Технологическая, 12</span></div>
+              <div><i class="fa-solid fa-clock"></i><span>Пн–Пт: 09:00–18:00</span></div>
+            </div>
+          </div>
+
+          <div class="kontakty-blok kontakty-mini">
+            <i class="fa-solid fa-comments"></i>
+            <div>
+              <h3>Есть вопрос по материалам?</h3>
+              <p>Через форму связи можно отправить сообщение редакции.</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="kontakty-blok forma-prostaya" id="forma-svyazi">
+          <span class="meloch-nad-zagolovkom">Форма сообщения</span>
+          <h2>Отправить сообщение</h2>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input id="imya" type="text" placeholder="Ваше имя" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input id="pochta" type="email" placeholder="example@mail.ru" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="soobshenie" rows="7" placeholder="Напишите ваш вопрос" required></textarea>
+          </div>
+
+          <button class="knopka knopka-glavnaya" type="submit">Отправить</button>
+          <p class="form-note" id="otvet-formy"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="podval-sayta">
+    <div class="obolochka podval-ryad">
+      <div>
+        <a class="logo logo-v-podvale" href="index.html">
+          <span class="tekst-logo">NeuroSpace</span>
+        </a>
+        <p>Информационная платформа о нейросетях, цифровых инструментах и практическом использовании AI в повседневных задачах.</p>
+      </div>
+
+      <div>
+        <h4>Разделы</h4>
+        <a href="about.html">О нейросетях</a>
+        <a href="tools.html">Инструменты</a>
+        <a href="articles.html">Статьи</a>
+      </div>
+
+      <div>
+        <h4>Контакты</h4>
+        <a href="mailto:hello@neurospace.ru">hello@neurospace.ru</a>
+        <a href="tel:+78005553535">+7 (800) 555-35-35</a>
+        <span>Москва, ул. Технологическая, 12</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
